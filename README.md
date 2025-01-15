@@ -1,0 +1,3 @@
+This example demonstrates a potential issue in COBOL when using the DIVIDE statement with GIVING and REMAINDER. If the receiving fields aren't large enough, a numeric overflow could occur, resulting in incorrect results or program termination.
+
+The `bug.cob` file shows the problematic code, which performs division without considering the potential size of the quotient and remainder. The solution in `bugSolution.cob` expands the data size to prevent errors. This issue is uncommon but crucial for understanding and managing potential issues in COBOL programs.
